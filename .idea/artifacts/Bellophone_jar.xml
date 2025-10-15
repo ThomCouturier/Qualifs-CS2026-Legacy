@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Bellophone:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Bellophone_jar</output-path>
+    <root id="archive" name="Bellophone.jar">
+      <element id="module-output" name="Bellophone" />
+    </root>
+  </artifact>
+</component>
