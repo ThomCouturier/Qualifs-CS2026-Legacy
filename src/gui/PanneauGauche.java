@@ -348,7 +348,7 @@ public class PanneauGauche extends javax.swing.JPanel {
         @Override
         public void actionPerformed(ActionEvent actionEvt) {
             String action = actionEvt.getActionCommand();
-            //interfacePrincipale.controleur.getInstrument().jouerSon();
+            interfacePrincipale.controleur.getInstrument().noteToMidi(action);
         }
     }
 

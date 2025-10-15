@@ -405,7 +405,7 @@ public class Instrument implements Receiver {
 
     }
 
-    private int noteToMidi(String nom) {
+    public int noteToMidi(String nom) {
         try {
             int octave = 4;
             String nomNote = nom;
