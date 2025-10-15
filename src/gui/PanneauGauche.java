@@ -301,6 +301,13 @@ public class PanneauGauche extends javax.swing.JPanel {
         actionMap.put("7", new KeyAction("7"));
         actionMap.put("8", new KeyAction("8"));
         actionMap.put("9", new KeyAction("9"));
+
+        actionMap.put("Q", new KeyPlayAction("A"));
+        actionMap.put("W", new KeyPlayAction("B"));
+        actionMap.put("E", new KeyPlayAction("C"));
+        actionMap.put("R", new KeyPlayAction("D"));
+        actionMap.put("T", new KeyPlayAction("E"));
+        actionMap.put("Y", new KeyPlayAction("F"));
     }
 
     private void boucle(int numeroBoucle) {
@@ -330,6 +337,18 @@ public class PanneauGauche extends javax.swing.JPanel {
         public void actionPerformed(ActionEvent actionEvt) {
             int numeroBoucle = Integer.parseInt(actionEvt.getActionCommand());
             boucle(numeroBoucle-1);
+        }
+    }
+    private class KeyPlayAction extends AbstractAction {
+
+        public KeyPlayAction(String actionCommand) {
+            putValue(ACTION_COMMAND_KEY, actionCommand);
+        }
+
+        @Override
+        public void actionPerformed(ActionEvent actionEvt) {
+            String action = actionEvt.getActionCommand();
+            //interfacePrincipale.controleur.getInstrument().jouerSon();
         }
     }
 
