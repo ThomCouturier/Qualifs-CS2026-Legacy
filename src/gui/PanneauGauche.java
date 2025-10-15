@@ -5,6 +5,8 @@
  */
 package gui;
 
+import domaine.Touche;
+
 import java.awt.Color;
 import java.awt.Image;
 import java.awt.event.ActionEvent;

@@ -5,13 +5,12 @@
  */
 package domaine;
 
-import gui.InterfacePrincipale;
-import gui.OptionsGUI;
-import gui.ProprietesSon;
-import gui.ProprietesTouche;
+import gui.*;
+
 import java.awt.Dimension;
 import java.awt.Image;
 import java.awt.Point;
+import java.awt.event.KeyEvent;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
@@ -32,6 +31,7 @@ import java.util.Timer;
 import java.util.Vector;
 import javax.sound.midi.MidiChannel;
 import javax.sound.midi.Sequencer;
+import javax.swing.*;
 
 /**
 
@@ -75,6 +75,7 @@ public class Controleur implements Observable {
 //            channels[i].controlChange(7, volume);
 //        }
 //    }
+
     public void setMode(Mode nouveauMode) {
         this.modeEnCours = nouveauMode;
     }
